@@ -14,7 +14,7 @@ A modern real estate platform built with React + TypeScript, featuring dynamic l
 - **Animations**: Smooth transitions and effects using AOS for enhanced user experience.
 - **SEO-Friendly**: Optimized for search engines with clear headings, descriptions, and metadata.
 
-### 🛠️ Technologies Used
+### 🌿 Technologies Used
 
 - **Frontend**
   - **React**: For building interactive UI components.
@@ -88,6 +88,6 @@ A placeholder page is included for sections that are currently under development
 >
 > This page is currently in development, but be sure to check back for updates!
 
-🖼️ Demo of the Website: 
+🌟 Demo of the Website: 
 
 https://alaa-assas.github.io/Task4/#/
