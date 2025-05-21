@@ -1,0 +1,109 @@
+/* ===========================
+   Desgin work card
+=========================== */  
+.work-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: stretch;
+  gap: 30px;
+  padding: 42px 50px 80px 50px;
+  border-radius: 22px;
+  width: 30.995106%;
+  max-width: 552px;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+/* ===========================
+   Hover effect for the work card
+   =========================== */
+.work-card:hover{
+    transform: scale(1.1);
+    border: 1px solid var(--blue01)
+}
+
+/* ===========================
+   Styling for the work card image (icon)
+   =========================== */
+.work-card img {
+  width: 56px;
+  height: 56px;
+}
+
+/* ===========================
+   Container for the title and description
+   =========================== */
+.work-card-desc{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===========================
+   Styling for the title in the work card
+   =========================== */
+.work-card-desc h3 {
+  color: var(--black02);
+}
+
+/* ===========================
+ Styling for the description in the work card
+     =========================== */
+.work-card-desc p {
+  color: var(--black0105);
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* ===========================
+   Special styling for the second work card
+   =========================== */
+.work-card:nth-child(2) {
+  background-color: var(--blue01);
+}
+
+.work-card:nth-child(2) .work-card-desc h3,
+.work-card:nth-child(2) .work-card-desc p {
+  color: var(--white-color);
+}
+
+/* ===========================
+   Responsive Design: meduim devices
+  =========================== */
+@media (max-width: 1919px) {
+  .work-card {
+    gap: 20px;
+    padding: 30px 40px 80px 40px;
+    border-radius: 16px;
+  }
+
+  .work-card img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .work-card-desc {
+    gap: 10px;
+  }
+
+  .work-card-desc h3 {
+    font-size: 22px;
+  }
+
+  .work-card-desc p {
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+  .work-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 17.5px 28px 17.5px;
+    border-radius: 10px;
+  }
+}

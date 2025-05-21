@@ -1,0 +1,48 @@
+/* ===== styling best card ===== */
+.best-card {
+    width: 31.6313214%;
+    position: relative;
+    max-width: 542px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* styling image for best card */
+.best-card img {
+    width: 100%;
+    transition: transform 0.3s ease; 
+}
+
+/* Hover Effect on Image */
+.best-card:hover img {
+    transform: scale(1.1); /* Zoom in the image */
+}
+
+/* Styling for feature */
+.feature {
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    top: 14px;
+    left: 14px;
+}
+
+.feature span {
+    border: 1px solid var(--white-color);
+    border-radius: 5px;
+    color: var(--white-color);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 14px;
+    background-color: var(--black0105);
+    font-family: "Inter", sans-serif;
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+    .best-card {
+        width: 100%;
+        max-width: 100%;
+    }
+}

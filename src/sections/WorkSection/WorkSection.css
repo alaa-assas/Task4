@@ -1,0 +1,46 @@
+/* ===========================
+   Desgin work section
+=========================== */   
+.work-section {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* ===========================
+   Desgin work cards
+   =========================== */
+.work-cards {
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+/* ===========================
+   Responsive Design: meduim devices
+   =========================== */
+@media (max-width: 1919px) {
+  .work-section {
+    gap: 58px;
+  }
+
+  .work-cards {
+    gap: 43px;
+  }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+  .work-section {
+    gap: 42px;
+  }
+
+  .work-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

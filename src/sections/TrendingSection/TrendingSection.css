@@ -1,0 +1,52 @@
+
+/* === Trending Section styling === */
+.trending-section {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.trending-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.trending-cards-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  align-items: start;
+  justify-content: space-between;
+}
+
+/* === Responsive Styles === */
+
+/* ===========================
+   Responsive Design: meduim devices
+   =========================== */
+@media (max-width: 1919px) {
+  .trending-section {
+    gap: 58px;
+  }
+
+  .trending-cards,
+  .trending-cards-group {
+    gap: 25px;
+  }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+  .trending-section {
+    gap: 42px;
+  }
+
+  .trending-cards,
+  .trending-cards-group{
+    gap: 20px;
+  }
+}

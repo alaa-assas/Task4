@@ -1,0 +1,127 @@
+/* ==== styling trending card ==== */
+.trending-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: var(--white-color);
+  border-radius: 16px;
+  box-shadow: 0px 0px 10px 0px #0000001A;
+  max-width: 542px;
+  transition: all 0.3s ease;
+}
+
+ /* Increase shadow on hover effect */
+.trending-card:hover{
+  border: 2px solid var(--blue01);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.trending-card img {
+  border-radius: 10px;
+  transition: transform 0.3s ease; 
+}
+
+/* Hover Effect on Image */
+.trending-card:hover img {
+  transform: scale(1.05); /* Zoom in the image */
+}
+
+/* ==== styling trending card header ==== */
+
+.trending-card .card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.trending-card .card-header span {
+  color: var(--blue01);
+  line-height: 40px;
+}
+
+.trending-card .card-header h3 {
+  width: 60%;
+  color: var(--black01);
+  line-height: 40px;
+}
+
+/* ==== styling trending card location ==== */
+.card-location {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 48px;
+}
+
+.card-location p {
+  color: var(--black0105);
+}
+
+/* === Responsive Styles === */
+
+/* ===========================
+   Responsive Design: meduim devices
+   =========================== */
+@media (max-width: 1919px) {
+  .trending-card {
+    gap: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 30.17377%;
+  }
+  
+  .trending-card img {
+    border-radius: 6px;
+  }
+
+  .trending-card .card-header span {
+      font-size: 18px;
+      line-height: 28px;
+    }
+
+    .trending-card .card-header h3 {
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+    .card-location {
+      padding-top: 38px;
+      gap: 10.48px; 
+    }
+
+    .card-location p {
+      font-size: 14px;
+      line-height: 20px;
+    }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+  .trending-card {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    gap: 14px;
+    padding: 16px;
+    border-radius: 6px;
+  }
+
+  .trending-card .card-header h3 {
+      width: 100%;
+      font-size: 16px;
+      line-height: 27px;
+  }
+
+  .card-location {
+    padding-top: 72px;
+    gap: 15.45px;
+  }
+
+  .card-location  p {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,126 @@
+/* ==================
+   styling Dream Section
+ ==================== */
+.dream-section {
+  background-image: url(/Task4/Images/Dream/img.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  position: relative;
+}
+
+.dream-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 70%;
+}
+
+/* Title component custom design */
+.dream-section .title-comp {
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+/* Add slight zoom effect on hover */
+.dream-content .title-comp:hover{
+  transform: scale(1.05); 
+}
+
+.dream-section .title-comp h2 {
+  font-size: 100px;
+  line-height: 56px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.dream-section .title-comp p {
+  font-size: 40px;
+  line-height: 26px;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.dream-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  pointer-events: none;
+}
+
+/* === Responsive Styles === */
+
+/* ===========================
+   Responsive Design: meduim devices
+   =========================== */
+@media (max-width: 1919px) {
+  .dream-section {
+      min-height: 380px;
+  }
+
+  .dream-content {
+      width: 50%;
+  }
+
+  .dream-section .title-comp {
+      gap: 58px;
+  }
+
+  .dream-section .title-comp h2 {
+      font-size: 70px;
+  }
+
+  .dream-section .title-comp p {
+      font-size: 30px;
+      font-weight: 400;
+  }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+  .dream-section {
+      background-size: 150% 100%;
+  }
+
+  .dream-content {
+      width: 75%;
+  }
+
+  .dream-section .title-comp {
+      gap: 22px;
+  }
+
+  .dream-section .title-comp h2 {
+      font-size: 50px;
+  }
+
+  .dream-section .title-comp p {
+      font-size: 24px;
+  }
+}
+
+@media (max-width: 570px) {
+  .dream-section .title-comp h2 {
+      font-size: 32px;
+  }
+
+  .dream-section .title-comp p {
+      font-size: 14px;
+  }
+}

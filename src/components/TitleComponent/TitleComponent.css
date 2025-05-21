@@ -1,0 +1,54 @@
+.title-comp{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.title-comp h2{
+    color: var(--black02);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.title-comp h2:hover {
+    background: linear-gradient(90deg, var(--blue01), var(--blue02), var(--blue02));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title-comp p{
+    color: var(--black0105);
+}
+
+@media (max-width: 1919px) {
+    .title-comp{
+        gap: 10px;
+    }
+
+    .title-comp h2{
+        font-size: 40px;
+        line-height: 56px;
+    }
+    
+    .title-comp p{
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 992px) {
+    .title-comp{
+        gap: 6px;
+    }
+
+    .title-comp h2{
+        font-size: 40px;
+        line-height: 56px;
+    }
+    
+    .title-comp p{
+        font-size: 15px;
+        line-height: 26px;
+    }
+}

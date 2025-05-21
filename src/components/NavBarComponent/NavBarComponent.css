@@ -1,0 +1,239 @@
+/* ===========================
+     styling navigation bar
+   =========================== */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+}
+
+/* ===========================
+   Styles for the scrolled state of the navbar
+   =========================== */
+nav.scrolled {
+    background-color: var(--white-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid var(--blue01)
+}
+
+
+.nav-logo {
+    width: 80px;
+}
+
+/* ===========================
+   ul for navigation links
+   =========================== */
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+/* ===========================
+   Individual navigation link styling
+   =========================== */
+.navLink {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--black01);
+    transition: all 0.3s linear;
+    position: relative
+}
+
+/* ===========================
+   Hover effect for navigation links
+   =========================== */
+.navLink:hover {
+    color: var(--blue01);
+}
+
+/* ===========================
+   Active link styling
+   =========================== */
+.nav-links .active {
+    border-bottom: 1px solid var(--blue01);
+    padding-bottom: 4px;
+    color: var(--blue01);
+}
+
+/* ===========================
+   Styling for the login button
+   =========================== */
+.login-btn {
+    cursor: pointer;
+    background-color: var(--blue01);
+    width: 150px;
+    color: var(--white01);
+    padding: 18px 34px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* ===========================
+   Hover effect for the login button
+   =========================== */
+.login-btn:hover {
+    background-color: var(--white01);
+    color: var(--blue01);
+    border: 1px solid var(--blue01);
+    transform: scale(1.1);
+}
+
+/* ===========================
+   Mobile-specific login button
+   =========================== */
+.login-Btn-mobile {
+    display: none;
+}
+
+/* ===========================
+   Toggle button for mobile menu
+   =========================== */
+.toggle-btn {
+    display: none;
+}
+
+
+/* ===========================
+   Responsive Design: meduim devices
+  =========================== */
+@media (max-width: 1919px) {
+    .navBar {
+        padding-top: 17px;
+    }
+
+    .nav-logo {
+        width: 68px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .navLink {
+        font-size: 16px !important;
+    }
+
+    .login-btn {
+        width: 135px;
+        padding: 13px 20px;
+        border-radius: 6px;
+    }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+
+    .navBar {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .white-bg-nav{
+        background-color: var(--white-color);
+    }
+
+    .nav-logo {
+        width: 45.92px;
+    }
+
+    .toggle-btn {
+        display: block;
+        background: none;
+        border: none;
+    }
+
+    .toggle-btn img {
+        width: 25.69px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        position: absolute;
+        align-items: stretch;
+        top: 67px;
+        left: 0;
+        width: 100%;
+        background-color: var(--white-color);
+        gap: 32px;
+        padding-top: 0;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease-in-out;
+        z-index: 999999999;
+        padding-bottom: 50px;
+    }
+
+    .responsiveNav {
+        display: flex;
+        padding-top: 32px;
+        max-height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-li {
+        font-weight: 400;
+    }
+
+    .nav-li:hover{
+        background-color: var(--blue02);
+        border-top: none;
+        border-bottom: none;
+    }
+
+    .navLink {
+        font-size: 24px !important;
+        padding: 24px 92px 24px 20px;
+        border-top: 1px solid var(--black-color);
+        border-bottom: 1px solid var(--black-color);
+        display: inline-block;
+        width: 100%;
+    }
+
+    .navLink:hover::after {
+        width: 0%;
+    }
+
+    .login-btn {
+        display: none;
+    }
+
+    .mobileLoginWrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .login-Btn-mobile {
+        display: block !important;
+        padding: 18px 34px;
+        width: 150px;
+        background-color: var(--blue01);
+        color: var(--white01);
+        border: none;
+        border-radius: 8px;
+        font-size: 20px;
+    }
+
+    .nav-links .active {
+        background-color: #D7E6EA;
+        border: none;
+        padding-bottom: 24px;
+    }
+}

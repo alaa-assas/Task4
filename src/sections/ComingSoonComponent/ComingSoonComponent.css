@@ -1,0 +1,77 @@
+/* === Coming Soon Section Layout === */
+.comming-soon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 32px;
+}
+/* === Image Styling === */
+.comming-soon img{
+    max-width: 600px;
+    width: 100%;
+}
+/* === Description Container Styling === */
+.comming-soon-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+}
+/* === Heading (Title) Styles === */
+.comming-soon h3{
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0;
+    color: var(--blue01);
+    text-align: center;
+}
+/*=== Paragraph (Description) Styles === */
+.comming-soon p{
+    color: var(--black0105);
+    line-height: 40px;
+    text-align: center;
+}
+
+/* === Responsive Styles === */
+
+/* ===========================
+   Responsive Design: meduim devices
+   =========================== */
+@media (max-width: 1919px) {
+    .comming-soon{
+        gap: 16px;
+    }
+
+    .comming-soon h2{
+        font-size: 40px;
+        line-height: 56px;
+    }
+    
+    .comming-soon p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+    .comming-soon{
+        padding-top: 50px;
+        gap: 16px;
+    }
+
+    .comming-soon h2{
+        font-size: 40px;
+        line-height: 56px;
+    }
+    
+    .comming-soon p{
+        font-size: 14px;
+        line-height: 26px;
+    }
+}

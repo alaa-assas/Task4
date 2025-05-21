@@ -1,0 +1,42 @@
+/* ===========================
+   Main container for social media icons
+   =========================== */
+.social-icons {
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+}
+
+/* ===========================
+   Styling for individual icon images
+   =========================== */
+.social-icons img {
+  width: 48px; 
+  padding: 10px; 
+}
+
+/* ===========================
+   Styling for anchor tags wrapping the icons
+   =========================== */
+.social-icons a {
+  background-color: var(--blue01); 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+}
+
+/* ===========================
+   Hover effect for anchor tags
+   =========================== */
+.social-icons a:hover {
+  transform: translateY(-8px); 
+}
+
+/* ===========================
+   Responsive design for screens up to 1919px
+   =========================== */
+@media (max-width: 1919px) {
+  .social-icons {
+    gap: 16px;
+  }
+}

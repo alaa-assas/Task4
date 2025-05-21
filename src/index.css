@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Start Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+  
+  --blue11: #02559511;
+  --black15: #0000001A;
+  --black02: #222222;
+  --black0105: #22222280;
+
+  --white01: #F5F5F5;
+  --white26: #FFFFFF26;
+
+  --blue01: #025595;
+  --blue02:#EFF8FF;
+}
+
+/* Layout */
+.px-150 {
+  padding-left: 7.8125%;
+  padding-right: 7.8125%;
+}
+
+.pd-150{
+    padding-bottom: 7.8125%;
+}
+
+.mt-160 {
+  margin-top: 8.33333333%;
+}
+
+.fs-18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+.fs-20 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+.fs-20-6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+
+
+.fs-24 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 2px;
+}
+
+.fs-58 {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--blue02), var(--blue01));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--blue01) , var(--black0105));
+}
+
+.Responsive{
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1919px) {
+  .px-150 {
+    padding-left: 5.12445095%;
+    padding-right: 5.12445095%;
+  }
+
+  .mt-160 {
+    margin-top: 6.88140556%;
+  }
+
+  .pd-150{
+    padding-bottom: 5.12445095%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .px-150 {
+    padding-left: 5.55555556%;
+    padding-right: 5.55555556%;
+  }
+
+  .pd-150{
+    padding-bottom: 5.12445095%;
+  }
+
+  .mt-160 {
+    margin-top: 6.88140556%;
+  }
+}

@@ -1,0 +1,202 @@
+/* ==============
+footer content 
+================= */
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/* ==============
+footer top (brands and links) 
+================= */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+/* ==============
+footer top brands (logo and description ) 
+================= */
+.footer-brand {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+.footer-brand p {
+    color: var(--black0105);
+}
+
+/* Generic column used for links, contact info, or social icons */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* =============================
+styling Title and links for footer column 
+   ==============================*/
+.footer-col h3 {
+    color: var(--black01);
+    font-weight: 700;
+}
+
+.footer-col p {
+    font-weight: 400;
+    color: var(--black01);
+}
+
+.footer-col ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-col ul a {
+    text-decoration: none;
+    color: var(--black01);
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+/* ==============
+styling footer Bottom part (privacy text , legal links) 
+================= */
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-top: 1px solid var(--black0105);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-bottom span {
+    color: var(--black01);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--black01);
+    cursor: pointer;
+    position: relative;
+}
+
+/* =============
+    Hover Effect Links 
+   =============*/
+.footer-col ul a::after,
+.footer-links a::after 
+ {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: var(--blue01);
+    transition: width 0.3s ease;
+}
+
+.footer-col ul a:hover::after,
+.footer-links a:hover::after
+{
+    width: 100%;
+}
+
+/* ===========================
+   Responsive Design: meduim devices
+  =========================== */
+@media (max-width: 1919px) {
+    footer {
+        gap: 60px;
+    }
+
+    .footer-top {
+        gap: 60px;
+    }
+
+    .footer-brand {
+        max-width: 450px;
+        gap: 25.92px;
+    }
+
+    .footer-col {
+        gap: 20px;
+    }
+
+    .footer-col h3 {
+        font-size: 20px;
+    }
+
+    .footer-col p {
+        font-size: 16px;
+    }
+
+    .footer-col ul {
+        gap: 16px;
+    }
+
+    .footer-col ul a {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .footer-bottom span {
+        font-size: 14px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+}
+
+
+/* ===========================
+   Responsive Design: small devices
+   =========================== */
+@media (max-width: 992px) {
+    .footer-top {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+        gap: 26px;
+    }
+
+    .footer-bottom {
+        padding-top: 27px;
+        padding-bottom: 27px;
+    }
+
+    .footer-bottom span {
+        font-size: 16px;
+    }
+
+    .footer-links a {
+        font-size: 16px;
+    }
+}

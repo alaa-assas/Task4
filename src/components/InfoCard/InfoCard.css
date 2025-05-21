@@ -1,0 +1,106 @@
+/* desgin Info Card */
+.InfoCard {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.InfoCard .Info-card-img{
+    background-color: var(--blue11);
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InfoCard .Info-card-img img {
+    width: 50px;
+}
+
+/* desgin Info Card Description title + paragraph */
+.InfoCard .InfoCardDesc {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.InfoCard .InfoCardDesc h3 {
+    width: fit-content;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.22px;
+    color: var(--black01);
+}
+
+.InfoCard .InfoCardDesc p {
+    color: var(--black0105);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.22px;
+}
+
+@media(max-width: 1919px){
+    .InfoCard {
+        gap: 28px;
+    }
+
+    .InfoCard .InfoCardDesc {
+        gap: 24px;
+    }
+
+    .InfoCard .InfoCardDesc h3 {
+        font-size: 22px;
+    }
+
+    .InfoCard .InfoCardDesc p {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 1440px){
+    
+    .InfoCard {
+        gap: 15px;
+    }
+
+    /* .InfoCard img {
+        width: 80px;
+    } */
+
+    .InfoCard .InfoCardDesc {
+        gap: 10px;
+    }
+
+    .InfoCard .InfoCardDesc h3 {
+        font-size: 16px;
+    }
+
+    .InfoCard .InfoCardDesc p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width: 992px){
+    
+    .InfoCard {
+        gap: 24px;
+    }
+
+    .InfoCard .InfoCardDesc {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .InfoCard .InfoCardDesc h3 {
+        font-size: 16px;
+    }
+
+    .InfoCard .InfoCardDesc p {
+        font-size: 15px;
+    }
+}
