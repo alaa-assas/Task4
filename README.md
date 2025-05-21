@@ -39,8 +39,8 @@ A modern real estate platform built with React + TypeScript, featuring dynamic l
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/real-estate-website.git
-   cd real-estate-website
+   git clone https://github.com/alaa-assas/Task4.git
+   cd Task4
    ```
 
 2. **Install Dependencies**
