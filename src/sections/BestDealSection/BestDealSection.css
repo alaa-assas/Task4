@@ -87,6 +87,10 @@
         overflow-x: auto;
     }
 
+    .tabs::-webkit-scrollbar {
+        display: none;
+    }
+
     .tab-btn {
         font-size: 16px; 
         font-weight: 600; 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { IoMdArrowUp } from "react-icons/io";
 import "./ScrollToTop.css";
 
